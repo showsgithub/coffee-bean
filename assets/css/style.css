@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap");
+
+/* 
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
+  color values:
+    #96746b
+    #c7a17a
+    #312a26
+    #eaeaea
+    #ffffff
+  */
+/* Reset declaration */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+/* Global Properties */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+/* header section 1 */
+.nav {
+  border: 4px solid red;
+  overflow: auto;
+  width: 85%;
+  margin: 0 auto;
+}
+.nav h1 {
+  /* border: 2px dashed green; */
+  float: left;
+}
+
+.nav h1 a {
+  color: #96746b;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav ul {
+  /* border: 2px dashed blue; */
+  float: right;
+  margin-top: 1em;
+}
+.nav ul li {
+  display: inline;
+  margin-left: 1em;
+}
+.nav ul li a {
+  color: #312a26;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+/* banner section 2 */
+.banner {
+  /* border: 4px solid red; */
+  width: 100%;
+  height: 670px;
+  background: #eaeaea url(../images/banner-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.banner-text {
+  /* border: 2px dashed yellow; */
+  position: absolute;
+  /* left: 50%; */
+  left: 7.5%;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translate(0, -50%);
+}
+
+.banner-text h2 {
+  color: #c7a17a;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.banner-text h2 span {
+  color: #96746b;
+}
+.banner-text p {
+  color: #ffffff;
+}
+.banner-text a {
+  background-color: #312a26;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+/* ads-1 section 3 */
+.ads {
+  border: 4px solid red;
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+}
+
+.ads-items {
+  border: 2px dashed blue;
+  height: 350px;
+  /* width: 50%; */
+  float: left;
+  width: 49%;
+  position: relative;
+}
+
+.ads-item1 {
+  margin-right: 2%;
+  background-image: url(../images/ads-img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ads-item2 {
+  /* margin-right: 2%; */
+  background-image: url(../images/ads-img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.ads-text {
+  border: 2px dashed yellow;
+  color: white;
+  /* text-transform: uppercase; */
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 60%;
+  transform: translate(0, -50%);
+}
+.ads-text h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px #312a26;
+  line-height: 1.2;
+}
+.ads-text a {
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px #312a26;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+/* Merchandise Section 4*/
+.merch {
+  border: 4px solid red;
+  width: 85%;
+  margin: 4em auto;
+}
+.section-header {
+  /* border: 2px dashed green; */
+  text-align: center;
+}
+.section-header span {
+  color: #c7a17a;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.section-header h2 {
+  color: #312a26;
+  text-transform: uppercase;
+}
+.section-header hr {
+  height: 2px;
+  width: 30%;
+  margin: auto;
+  background-color: #c7a17a;
+}
+.merch-gallery {
+  /* border: 2px dashed blue; */
+  margin-top: 2em;
+  overflow: auto;
+}
+.merch-items {
+  /* border: 2px solid black; */
+  width: 24.25%;
+  float: left;
+  margin-right: 1%;
+}
+.merch-items img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.merch-items h3 {
+  /* color: #312a26; */
+  text-transform: capitalize;
+}
+
+/* pseudo-class = fake-class
+  selector:nth-child()
+*/
+.merch-items:nth-child(4),
+.merch-items:nth-child(8) {
+  margin-right: 0;
+}
+.merch-items:nth-child(5),
+.merch-items:nth-child(6),
+.merch-items:nth-child(7),
+.merch-items:nth-child(8) {
+  margin-top: 1%;
+}
+
+/* Discount section 5 */
+.discount {
+  border: 2px solid red;
+  height: 350px;
+  background-image: url(..//images/discount-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.discount-text {
+  border: 2px solid yellow;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discount-text span {
+  font-style: italic;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+.discount-text h2 {
+  color: #ffffff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px #312a26;
+}
+.discount-text a {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #312a26;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.ads-item3 {
+  margin-right: 2%;
+  background-image: url(../images/ads-img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ads-item4 {
+  /* margin-right: 2%; */
+  background-image: url(../images/ads-img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ads-item5 {
+  margin-right: 2%;
+  background-image: url(../images/ads-img5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.ads-item6 {
+  /* margin-right: 2%; */
+  background-image: url(../images/ads-img6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.ads-item5,
+.ads-item6 {
+  margin-top: 2%;
+}
+
+/* Form section */
+.reservation {
+  border: 1px solid red;
+  overflow: auto;
+  width: 85%;
+  margin: 0 auto;
+}
+.reservation-time {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.form-group {
+  border: 1px dotted blue;
+  margin-top: 40px;
+  float: left;
+  width: 49%;
+  background-color: #eaeaea;
+  height: 650px;
+  border-radius: 1%;
+  padding-top: 2em;
+  text-align: center;
+}
+.form-group-1 {
+  margin-right: 2%;
+}
+.form-input {
+  width: 85%;
+  padding: 1em;
+  margin: 1em 7.5%;
+  display: block;
+}
+.form-label {
+  width: 100%;
+  display: block;
+  margin: 0.5% 7.5%;
+  text-align: left;
+}
+
+.agree {
+  padding-left: 7.5%;
+  text-align: left;
+}
+#send {
+  background-color: #c7a17a;
+  width: 85%;
+  padding: 10px;
+}
+
+
+/* pseudo element can be used for the card image
+   selector::before
+   selector::after 
+   content is a required property*/
+/* selector attribute
+   ex. input[type="submit" ] */
+
+
+   
+/* Footer-1 Section 9 */
+.footer{
+  /* border: 2px solid red; */
+  background-image: url(..//images/footer-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 2em 0;
+}
+.footer-content{
+  /* height: 300px; */
+  width: 85%;
+  margin: auto;
+  /* border: 2px solid yellow; */
+  overflow: auto;
+  
+}
+.footer-widget h3, .footer-widget h4, .footer-widget table{
+  color: white;
+}
+.footer-widget{
+  width: 25%;
+  height: 100%;
+  /* border: 2px solid skyblue; */
+  float: left;
+}
+.footer-widget p{
+  color: #c7a17a;
+}
+.footer-widget h3{
+  margin-bottom: 1em;
+}
+.footer-widget:nth-child(3) .last-post{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.footer-widget input{
+  padding: 1em;
+}
+#search{
+  background-color: #c7a17a;
+}
